@@ -1,0 +1,15 @@
+.post-container {
+  border: solid 1px grey;
+  margin-right: 20rem;
+  margin-top: 0.5rem;
+}
+
+.Tag {
+  border-radius: 5px;
+  padding: 1px 3px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 0.85em;
+  background: #555;
+}

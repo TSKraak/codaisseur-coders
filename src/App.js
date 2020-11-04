@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
+import PostPage from "./components/PostPage";
 import HomePage from "./pages/HomePage";
 
 const NotFound = () => {
@@ -10,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/home">
+        <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/about/:language?">
-          <About />
+        <Route exact path="/post/:id">
+          <PostPage />
         </Route>
         <Route path="/" component={NotFound} />
       </Switch>

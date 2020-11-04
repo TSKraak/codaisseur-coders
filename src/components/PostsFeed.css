@@ -1,7 +1,10 @@
 .post-container {
   border: solid 1px grey;
-  margin-right: 20rem;
+  margin-right: 40rem;
   margin-top: 0.5rem;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  background-color: rgba(119, 118, 118, 0.411);
 }
 
 .Tag {
@@ -12,4 +15,9 @@
   font-weight: bold;
   font-size: 0.85em;
   background: #555;
+}
+
+.card-post-title {
+  text-decoration: none;
+  color: white;
 }

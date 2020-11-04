@@ -1,4 +1,5 @@
 import Axios from "axios";
+import { API_URL } from "../../config";
 
 export function postsFetched(morePosts) {
   return {
@@ -18,7 +19,6 @@ export async function fetchNext5Posts(dispatch, getState) {
   console.log("getState", getState());
 
   dispatch(startLoading());
-  const API_URL = `https://codaisseur-coders-network.herokuapp.com`;
 
   // TODO
   // fetch next set of posts (use offset+limit),

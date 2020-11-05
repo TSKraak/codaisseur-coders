@@ -1,0 +1,25 @@
+.NavBar {
+  background-color: rgba(206, 226, 245, 0.377);
+  font-family: "Calibri", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 1px;
+}
+
+.home,
+.listings,
+.schedule,
+.about {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+}

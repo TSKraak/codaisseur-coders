@@ -5,7 +5,7 @@ const initialState = {
 };
 
 export default function postReducer(state = initialState, action) {
-  console.log("PAYLOAD", action.payload);
+  console.log("POST PAYLOAD", action.payload);
 
   switch (action.type) {
     case "START_LOADING_POST_ID":

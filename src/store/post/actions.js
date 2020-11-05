@@ -24,8 +24,8 @@ export function fetchPost(id) {
       axios.get(`${API_URL}/posts/${id}`),
       axios.get(`${API_URL}/posts/${id}/comments`),
     ]);
-    console.log("RESULT POST FETCH", postResponse);
-    console.log("RESULT COMMENTS FETCH", commentsResponse);
+    // console.log("RESULT POST FETCH", postResponse);
+    // console.log("RESULT COMMENTS FETCH", commentsResponse);
 
     dispatch(
       postFullyFetched({

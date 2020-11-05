@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchPost } from "../store/post/actions";
-import {
-  selectPostAndComments,
-  selectPostLoading,
-} from "../store/post/selectors";
+import { selectPostAndComments } from "../store/post/selectors";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
 import "./PostPage.css";
@@ -15,18 +12,17 @@ export default function PostPage() {
   const params = useParams();
   const dispatch = useDispatch();
   const id = params.id;
-  const loading = useSelector(selectPostLoading);
+
   const postAndComments = useSelector(selectPostAndComments);
 
-  console.log("loading", loading);
-  console.log("postAndComments", postAndComments);
+  // console.log("postAndComments", postAndComments);
 
   useEffect(() => {
     dispatch(fetchPost(id));
   }, [dispatch, id]);
 
   return (
-    <div>
+    <div className="Postpage">
       {!postAndComments ? (
         <p>Loading...</p>
       ) : (

@@ -16,7 +16,7 @@ export function startLoading() {
 
 export async function fetchNext5Posts(dispatch, getState) {
   const state = getState();
-  console.log("getState", getState());
+  // console.log("getState", getState());
 
   dispatch(startLoading());
 
@@ -31,4 +31,12 @@ export async function fetchNext5Posts(dispatch, getState) {
   const morePosts = res.data.rows;
 
   dispatch(postsFetched(morePosts));
+}
+
+export function addNewPost(title, content, tags, user, timeStamp) {
+  // console.log(title, content, tags, user, timeStamp);
+  return {
+    type: "ADD_NEW_POST",
+    payload: { title, content, tags, user, timeStamp },
+  };
 }
